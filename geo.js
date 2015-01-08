@@ -1,27 +1,34 @@
-var mmdbreader = require('maxmind-db-reader');
+var mmdbreader = require('maxmind-db-reader'),
+    fs = require('fs');
 
-//  open database
-var city = mmdbreader.openSync('./city.mmdb');
-
-// get geodata
-var geodata = city.getGeoDataSync('182.71.185.139');
-
-// form output
-var city = '',
-    country = '';
-
-// consolidate data
-if (geodata.cities == undefined || typeof geodata.cities === undefined) {
-    city = 'NA'
-} else {
-    city = geodata.cities.names.en;
+// read file for IPs
+function getIP(filename) {
+    fs.readFile('ips.csv', 'utf-8', function(err, data) {
+        if (err) throw err;
+        ips = data.split(',');
+        ips.forEach(getGeo)
+    });
 }
 
-if (geodata.country == undefined || typeof geodata.country === undefined) {
-    country = 'NA'
-} else {
-    country = geodata.country.names.en;
+function getGeo(ip, index, array) {
+    // get geodata
+    var city = mmdbreader.openSync('./city.mmdb');
+    var geodata = city.getGeoDataSync(ip);
+    // form output
+    var city = 'NA',
+        country = 'NA';
+
+    // consolidate data
+    if (geodata) {
+        if (geodata.city) {
+            country = geodata.country.names.en;
+            city = geodata.city.names.en;
+        } else if (geodata.country) {
+            country = geodata.country.names.en;
+        }
+    }
+
+    console.log(city, country)
 }
 
-// output
-console.log(city, country);
+getIP('ips.csv');
