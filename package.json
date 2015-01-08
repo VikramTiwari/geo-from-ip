@@ -1,0 +1,28 @@
+{
+  "name": "geo-from-ip",
+  "version": "0.0.1",
+  "description": "geo-from-ip",
+  "main": "geo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VikramTiwari/geo-from-ip.git"
+  },
+  "keywords": [
+    "geo",
+    "ip",
+    "maxmind"
+  ],
+  "author": "Vikram Tiwari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VikramTiwari/geo-from-ip/issues"
+  },
+  "homepage": "https://github.com/VikramTiwari/geo-from-ip",
+  "dependencies": {
+    "maxmind": "^0.5.3",
+    "maxmind-db-reader": "^0.2.0"
+  }
+}
