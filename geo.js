@@ -1,6 +1,6 @@
 var mmdbreader = require('maxmind-db-reader');
 
-// get databases files from http://dev.maxmind.com/geoip/geoip2/geolite2/
+// get databases files from http://dev.maxmind.com/geoip/geoip2/geolite2/ and rename them to city and country respectively
 
 // country database
 mmdbreader.open('./country.mmdb',function(err,countries){
