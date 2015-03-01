@@ -5,7 +5,7 @@ var mmdbreader = require('maxmind-db-reader'),
 function getIP(filename) {
     fs.readFile('ips.csv', 'utf-8', function(err, data) {
         if (err) throw err;
-        ips = data.split(',');
+        ips = data.split('\n');
         ips.forEach(getGeo);
     });
 }
@@ -13,7 +13,7 @@ function getIP(filename) {
 // get geo using each ip
 function getGeo(ip, index, array) {
     // get geodata
-    var city = mmdbreader.openSync('./GeoIP2-City.mmdb');
+    var city = mmdbreader.openSync('./mmdb/GeoIP2-City.mmdb');
     var geodata = city.getGeoDataSync(ip);
     // form output
     var city = 'NA',
@@ -29,7 +29,7 @@ function getGeo(ip, index, array) {
         }
     }
 
-    var isp = mmdbreader.openSync('./GeoIP2-ISP.mmdb');
+    var isp = mmdbreader.openSync('./mmdb/GeoIP2-ISP.mmdb');
     var ispdata = isp.getGeoDataSync(ip);
 
     var isp = 'NA',
@@ -44,7 +44,7 @@ function getGeo(ip, index, array) {
         }
     }
 
-    console.log(city, ':', country, ':', isp, ':', org);
+    console.log(city + ', ' + country + ': ' + isp + ', ' + org);
 }
 
 getIP('ips.csv');
