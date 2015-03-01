@@ -27,6 +27,7 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-# mmdb files and folder
-mmdb
-*.mmdb
+# mmdb files
+GeoIP2-City.mmdb
+GeoIP2-ISP.mmdb
+GeoLite2-City.mmdb
