@@ -3,16 +3,17 @@ var mmdbreader = require('maxmind-db-reader'),
 
 // read file for IPs
 function getIP(filename) {
-    fs.readFile('ips.csv', 'utf-8', function(err, data) {
+    fs.readFile(filename, 'utf-8', function(err, data) {
         if (err) throw err;
         ips = data.split('\n');
+        // console.log(ips)      
         ips.forEach(getGeo);
     });
 }
 
 // get geo using each ip
 function getGeo(ip, index, array) {
-    // get geodata
+    // get geodata db
     var city = mmdbreader.openSync('./mmdb/GeoIP2-City.mmdb');
     var geodata = city.getGeoDataSync(ip);
     // form output
@@ -29,6 +30,7 @@ function getGeo(ip, index, array) {
         }
     }
 
+    // get ISP db
     var isp = mmdbreader.openSync('./mmdb/GeoIP2-ISP.mmdb');
     var ispdata = isp.getGeoDataSync(ip);
 
