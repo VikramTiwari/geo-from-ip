@@ -12,6 +12,7 @@ Get geolocation and ISP data using max-mind's databases
 4. Run the following commands
 	```
 	[sudo] npm install
+	
 	[sudo] node geo.js
 	```
 
