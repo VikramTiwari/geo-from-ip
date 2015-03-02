@@ -1,5 +1,7 @@
 # geo-from-ip
 
+[![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip)
+
 Get geolocation and ISP data using max-mind's databases
 
 ==
