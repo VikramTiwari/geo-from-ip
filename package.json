@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "maxmind": "^0.5.3",
     "maxmind-db-reader": "^0.2.0"
   },
   "devDependencies": {

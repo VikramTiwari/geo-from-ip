@@ -9,12 +9,12 @@ Get geolocation and ISP data using max-mind's databases
 ## How to use
 
 1. Clone the [package][1] or [download][2] the zip
-2. Place the [databases][3] in the mmdb folder
+2. Place the [databases][3] in the `mmdb` directory
 3. Change IP addresses in [ips.csv][4]
 4. Run the following commands
 	```
 	[sudo] npm install
-	
+
 	[sudo] node geo.js
 	```
 

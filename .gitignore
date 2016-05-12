@@ -28,6 +28,7 @@ node_modules
 .lock-wscript
 
 # mmdb files
-GeoIP2-City.mmdb
-GeoIP2-ISP.mmdb
-GeoLite2-City.mmdb
+*.mmdb
+
+# dat files
+*.dat
