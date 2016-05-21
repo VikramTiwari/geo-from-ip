@@ -13,12 +13,16 @@
   "keywords": [
     "geo",
     "ip",
-    "maxmind"
+    "maxmind",
+    "update"
   ],
-  "author": "Vikram Tiwari",
+  "author": "Vikram Tiwari (vikramtiwari.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VikramTiwari/geo-from-ip/issues"
+  },
+  "engines": {
+    "node": ">=4.4.4"
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
@@ -26,6 +30,7 @@
   },
   "devDependencies": {
     "chai": "^2.1.0",
+    "chance": "^1.0.3",
     "expect": "^1.6.0",
     "mocha": "^2.1.0"
   }
