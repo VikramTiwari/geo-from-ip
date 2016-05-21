@@ -2,23 +2,36 @@
 
 [![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip)
 
-Get geolocation and ISP data using max-mind's databases
+Get geolocation information about an IP using MaxMind's GeoLite2 databases.
 
-==
+## Features
+
+- No frills install
+- Downloads databases automatically during installation
+- Run `npm install` to upgrade databases == automatic update on deployments
 
 ## How to use
 
-1. Clone the [package][1] or [download][2] the zip
-2. Place the [databases][3] in the `mmdb` directory
-3. Change IP addresses in [ips.csv][4]
-4. Run the following commands
-	```
-	[sudo] npm install
+- Include package in your project
 
-	[sudo] node geo.js
-	```
+```bash
+npm install --save geo-from-ip
+```
 
-[1]: github-mac://openRepo/https://github.com/VikramTiwari/geo-from-ip
-[2]: https://github.com/VikramTiwari/geo-from-ip/archive/master.zip
-[3]: https://github.com/VikramTiwari/geo-from-ip/blob/master/mmdb/
-[4]: https://github.com/VikramTiwari/geo-from-ip/blob/master/ips.csv
+- Use package to get geo data from IP
+
+```javascript
+let geoip = require('./lib/geo-from-ip');
+var ip = '199.188.195.120';
+console.log(geoip.allData(ip));
+// { code: { state: 'CA', country: 'US', continent: 'NA' },
+//   city: 'San Francisco',
+//   state: 'California',
+//   country: 'United States',
+//   continent: 'North America',
+//   postal: '94103' }
+```
+
+### Max-Mind License
+
+This product includes GeoLite2 data created by MaxMind, available from <https://www.maxmind.com>

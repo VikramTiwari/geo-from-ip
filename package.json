@@ -1,6 +1,6 @@
 {
   "name": "geo-from-ip",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "geo-from-ip",
   "main": "geo.js",
   "scripts": {
@@ -27,14 +27,13 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "maxmind-db-reader": "^0.2.0",
-    "mkdirp": "^0.5.1",
+    "maxmind-db-reader": "^0.2.1",
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "chai": "^2.1.0",
+    "chai": "^3.5.0",
     "chance": "^1.0.3",
-    "expect": "^1.6.0",
-    "mocha": "^2.1.0"
+    "expect": "^1.20.1",
+    "mocha": "^2.4.5"
   }
 }
