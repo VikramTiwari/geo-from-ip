@@ -4,7 +4,8 @@
   "description": "geo-from-ip",
   "main": "geo.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "postinstall": "node lib/update.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
     "maxmind",
     "update"
   ],
-  "author": "Vikram Tiwari (vikramtiwari.com)",
+  "author": "Vikram Tiwari <vikramtheone1@gmail.com> (vikramtiwari.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VikramTiwari/geo-from-ip/issues"
@@ -26,7 +27,9 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "maxmind-db-reader": "^0.2.0"
+    "maxmind-db-reader": "^0.2.0",
+    "mkdirp": "^0.5.1",
+    "request": "^2.72.0"
   },
   "devDependencies": {
     "chai": "^2.1.0",
