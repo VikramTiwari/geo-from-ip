@@ -1,11 +1,11 @@
 {
   "name": "geo-from-ip",
   "version": "1.0.0",
-  "description": "geo-from-ip",
-  "main": "geo.js",
+  "description": "Get geographical :globe_with_meridians: information about an IP :link: address ",
+  "main": "lib/geo-from-ip.js",
   "scripts": {
     "test": "mocha",
-    "postinstall": "node lib/update.js"
+    "postinstall": "node lib/update.js",
   },
   "repository": {
     "type": "git",
