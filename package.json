@@ -1,7 +1,7 @@
 {
   "name": "geo-from-ip",
   "version": "1.0.1",
-  "description": "Get geographical :globe_with_meridians: information about an IP :link: address ",
+  "description": "Get geographical information about an IP address",
   "main": "lib/geo-from-ip.js",
   "scripts": {
     "test": "mocha",
@@ -14,8 +14,17 @@
   "keywords": [
     "geo",
     "ip",
+    "update",
+    "mmdb",
+    "geo from ip",
+    "ip to geo",
+    "GeoIP2 Lite",
+    "GeoIP2",
+    "maxmind db reader",
+    "maxmind db",
     "maxmind",
-    "update"
+    "maxmind",
+    "auto update"
   ],
   "author": "Vikram Tiwari <vikramtheone1@gmail.com> (vikramtiwari.com)",
   "license": "MIT",

@@ -24,12 +24,15 @@ npm install --save geo-from-ip
 let geoip = require('geo-from-ip');
 var ip = '199.188.195.120';
 console.log(geoip.allData(ip));
-// { code: { state: 'CA', country: 'US', continent: 'NA' },
-//   city: 'San Francisco',
-//   state: 'California',
-//   country: 'United States',
-//   continent: 'North America',
-//   postal: '94103' }
+
+/*
+{ code: { state: 'CA', country: 'US', continent: 'NA' },
+ city: 'San Francisco',
+ state: 'California',
+ country: 'United States',
+ continent: 'North America',
+ postal: '94103' }
+ */
 ```
 
 ### Max-Mind License
