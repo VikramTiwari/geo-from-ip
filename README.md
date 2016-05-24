@@ -1,8 +1,8 @@
 # geo-from-ip
 
-[![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip)
-
 Get geolocation information about an IP using MaxMind's GeoLite2 databases.
+
+[![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip) [![NPM Version](https://img.shields.io/npm/v/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip) [![NPM Download](https://img.shields.io/npm/dm/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip)
 
 ## Features
 
