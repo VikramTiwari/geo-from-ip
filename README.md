@@ -22,16 +22,21 @@ npm install --save geo-from-ip
 
 ```javascript
 let geoip = require('geo-from-ip');
-var ip = '199.188.195.120';
-console.log(geoip.allData(ip));
+console.log(geoip.allData('199.188.195.120'));
 
 /*
 { code: { state: 'CA', country: 'US', continent: 'NA' },
- city: 'San Francisco',
- state: 'California',
- country: 'United States',
- continent: 'North America',
- postal: '94103' }
+  city: 'San Francisco',
+  state: 'California',
+  country: 'United States',
+  continent: 'North America',
+  postal: '94103',
+  location:
+   { accuracy_radius: 10,
+     latitude: 37.7758,
+     longitude: -122.4128,
+     metro_code: 807,
+     time_zone: 'America/Los_Angeles' } }
  */
 ```
 
