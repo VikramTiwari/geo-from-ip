@@ -6,7 +6,6 @@ var expect = require('chai').expect,
   geo = require('../lib/geo-from-ip.js');
 
 describe('Geos', function() {
-
   var ip = chance.ip();
   var result = geo.allData(ip);
 
@@ -18,28 +17,21 @@ describe('Geos', function() {
       });
     });
   } else {
-
-		describe('cityLevel()', function() {
+    describe('allData()', function() {
       it('should return city level information', function() {
         expect(result).to.have.a.property('city');
       });
-    });
-
-    describe('stateLevel()', function() {
       it('should return state level information', function() {
         expect(result).to.have.a.property('state');
       });
-    });
-
-    describe('countryLevel()', function() {
       it('should return country level information', function() {
         expect(result).to.have.a.property('country');
       });
-    });
-
-    describe('continentLevel()', function() {
       it('should return continent level information', function() {
         expect(result).to.have.a.property('continent');
+      });
+      it('should return location information', function() {
+        expect(result).to.have.a.property('location');
       });
     });
   }
