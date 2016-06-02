@@ -32,7 +32,17 @@
     "url": "https://github.com/VikramTiwari/geo-from-ip/issues"
   },
   "engines": {
-    "node": ">=4.4.4"
+    "node": ">=4.4.0"
+  },
+  "semistandard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
@@ -43,6 +53,7 @@
     "chai": "^3.5.0",
     "chance": "^1.0.3",
     "expect": "^1.20.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "semistandard": "^8.0.0"
   }
 }
