@@ -1,9 +1,7 @@
 'use strict';
 
-let path = require('path');
-
 // where your GeoIP databases are stored
-exports.dbDir = path.resolve(path.join(__dirname, '/'));
+exports.dbDir = __dirname;
 
 // local-filename, remote geolite-url
 exports.geoIpDbs = [{
