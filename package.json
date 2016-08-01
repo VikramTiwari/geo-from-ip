@@ -1,6 +1,6 @@
 {
   "name": "geo-from-ip",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Get geographical information about an IP address",
   "main": "lib/geo-from-ip.js",
   "scripts": {
@@ -34,7 +34,7 @@
   "engines": {
     "node": ">=4.4.0"
   },
-  "semistandard": {
+  "standard": {
     "globals": [
       "after",
       "afterEach",
@@ -46,15 +46,15 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "async": "^2.0.0-rc.5",
+    "async": "^2.0.1",
     "maxmind-db-reader": "^0.2.1",
-    "request": "^2.72.0"
+    "request": "^2.74.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "chance": "^1.0.3",
     "expect": "^1.20.1",
     "mocha": "^3.0.0",
-    "semistandard": "^8.0.0"
+    "standard": "^7.1.2"
   }
 }

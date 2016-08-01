@@ -21,8 +21,8 @@ npm install --save geo-from-ip
 - Use package to get geo data from IP
 
 ```javascript
-let geoip = require('geo-from-ip');
-console.log(geoip.allData('199.188.195.120'));
+let geoip = require('geo-from-ip')
+console.log(geoip.allData('199.188.195.120'))
 
 /*
 { code: { state: 'CA', country: 'US', continent: 'NA' },
