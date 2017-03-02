@@ -1,14 +1,45 @@
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new `gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.
+# geo-from-ip
 
-### Designer Templates
-We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.
+Get geolocation information about an IP using MaxMind's GeoLite2 databases.
 
-### Creating pages manually
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+[![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip) [![NPM Version](https://img.shields.io/npm/v/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip) [![NPM Download](https://img.shields.io/npm/dm/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip)
 
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+## Features
 
-### Support or Contact
-Having trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- No frills install
+- Downloads databases automatically during installation
+- Run `npm install` to upgrade databases == automatic update on deployments
+
+## How to use
+
+- Include package in your project
+
+```bash
+npm install --save geo-from-ip
+```
+
+- Use package to get geo data from IP
+
+```javascript
+let geoip = require('geo-from-ip')
+console.log(geoip.allData('199.188.195.120'))
+
+/*
+{ code: { state: 'CA', country: 'US', continent: 'NA' },
+  city: 'San Francisco',
+  state: 'California',
+  country: 'United States',
+  continent: 'North America',
+  postal: '94103',
+  location:
+   { accuracy_radius: 10,
+     latitude: 37.7758,
+     longitude: -122.4128,
+     metro_code: 807,
+     time_zone: 'America/Los_Angeles' } }
+ */
+```
+
+### Max-Mind License
+
+This product includes GeoLite2 data created by MaxMind, available from <https://www.maxmind.com>
