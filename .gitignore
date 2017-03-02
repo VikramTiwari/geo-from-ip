@@ -32,3 +32,6 @@ node_modules
 
 # dat files
 *.dat
+
+# vscode
+.vscode
