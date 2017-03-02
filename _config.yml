@@ -1,0 +1,8 @@
+title: Geo-from-ip
+description: using maxmind's database
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-leap-day
+
+gems:
+  - jekyll-mentions
