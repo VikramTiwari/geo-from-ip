@@ -14,13 +14,15 @@ Get geolocation information about an IP using MaxMind's GeoLite2 databases.
 
 - Include package in your project
 
-```bash
+``` sh
 npm install --save geo-from-ip
+# or, if you are using yarn
+yarn add --save geo-from-ip
 ```
 
 - Use package to get geo data from IP
 
-```javascript
+``` javascript
 const geoip = require('geo-from-ip')
 console.log(geoip.allData('199.188.195.120'))
 
@@ -40,10 +42,27 @@ console.log(geoip.allData('199.188.195.120'))
  */
 ```
 
+- Update database
+
+Database will get automatically updated every time deployment happens. But if you would like to force an update, just run:
+
+``` sh
+npm install
+# or, if you are using yarn
+yarn
+```
+
 ## Debugging / Developing
 
 Run your code using `geo-from-ip` as debug flag. Look into `pacakge.json` for example.
 
-### Max-Mind License
+## Credits
+
+### Developer: [Vikram Tiwari](https://vikramtiwari.com)
+
+If you found this library helpful, or learned something from it and want to thank me, consider [buying me a cup of coffee.](https://www.paypal.me/vikramtiwari/5)
+
+### Database: Max-Mind
 
 This product includes GeoLite2 data created by MaxMind, available from <https://www.maxmind.com>
+gic
