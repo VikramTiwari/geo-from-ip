@@ -1,6 +1,6 @@
 'use strict'
 
-const debug = require('debug')('geo-from-ip-test')
+const debug = require('debug')('geo-from-ip:test')
 const expect = require('chai').expect
 const Chance = require('chance')
 const chance = new Chance()

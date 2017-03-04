@@ -1,14 +1,14 @@
 # geo-from-ip
 
-Get geolocation information about an IP using MaxMind's GeoLite2 databases.
+Get geolocation 🌐 information about an IP 📲
 
 [![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip) [![NPM Version](https://img.shields.io/npm/v/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip) [![NPM Download](https://img.shields.io/npm/dm/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip)
 
 ## Features
 
-- No frills install
-- Downloads databases automatically during installation
-- Run `npm install` to upgrade databases == automatic update on deployments
+- No frills install 🚀
+- Downloads databases automatically during installation 🔋
+- Run `npm install` to upgrade databases == automatic update on deployments 💎
 
 ## How to use
 
@@ -58,9 +58,9 @@ Run your code using `geo-from-ip` as debug flag. Look into `pacakge.json` for ex
 
 ## Credits
 
-### Developer: [Vikram Tiwari](https://vikramtiwari.com)
+### Developer: [ 👨‍💻 Vikram Tiwari](https://vikramtiwari.com)
 
-If you found this library helpful, or learned something from it and want to thank me, consider [buying me a cup of coffee.](https://www.paypal.me/vikramtiwari/5)
+If you found this library helpful, or learned something from it and want to thank me, consider [buying me a cup of ☕️.](https://www.paypal.me/vikramtiwari/5)
 
 ### Database: Max-Mind
 
