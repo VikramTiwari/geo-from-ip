@@ -1,6 +1,6 @@
 {
   "name": "geo-from-ip",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Get geographical information about any IP address",
   "main": "lib/geo-from-ip.js",
   "scripts": {
