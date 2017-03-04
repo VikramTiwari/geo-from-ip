@@ -17,7 +17,7 @@ Get geolocation 🌐 information about an IP 📲
 ``` sh
 npm install --save geo-from-ip
 # or, if you are using yarn
-yarn add --save geo-from-ip
+yarn add geo-from-ip --save
 ```
 
 - Use package to get geo data from IP
