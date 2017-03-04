@@ -65,4 +65,3 @@ If you found this library helpful, or learned something from it and want to than
 ### Database: Max-Mind
 
 This product includes GeoLite2 data created by MaxMind, available from <https://www.maxmind.com>
-gic
