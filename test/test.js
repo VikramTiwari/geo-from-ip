@@ -1,12 +1,16 @@
 'use strict'
 
-let expect = require('chai').expect
-let Chance = require('chance')
-let chance = new Chance()
-let geo = require('../lib/geo-from-ip.js')
+const debug = require('debug')('geo-from-ip-test')
+const expect = require('chai').expect
+const Chance = require('chance')
+const chance = new Chance()
+const geo = require('../lib/geo-from-ip.js')
+
+debug('Starting tests');
 
 describe('Geos', function () {
   var ip = chance.ip()
+  debug(`Running test for ${ip}`)
   var result = geo.allData(ip)
 
   if (result.error) {

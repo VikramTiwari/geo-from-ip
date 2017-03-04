@@ -21,7 +21,7 @@ npm install --save geo-from-ip
 - Use package to get geo data from IP
 
 ```javascript
-let geoip = require('geo-from-ip')
+const geoip = require('geo-from-ip')
 console.log(geoip.allData('199.188.195.120'))
 
 /*
@@ -39,6 +39,10 @@ console.log(geoip.allData('199.188.195.120'))
      time_zone: 'America/Los_Angeles' } }
  */
 ```
+
+## Debugging / Developing
+
+Run your code using `geo-from-ip` as debug flag. Look into `pacakge.json` for example.
 
 ### Max-Mind License
 
