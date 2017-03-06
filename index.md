@@ -4,6 +4,9 @@ Get geolocation 🌐 information about an IP 📲
 
 [![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip) [![NPM Version](https://img.shields.io/npm/v/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip) [![NPM Download](https://img.shields.io/npm/dm/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip)
 
+## [Live Example](https://us-central1-ivikramtiwari.cloudfunctions.net/geofromip)
+The above link will show your geolocation as identified by using your IP address.
+
 ## Features
 
 - No frills install 🚀
