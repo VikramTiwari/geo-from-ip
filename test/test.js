@@ -6,7 +6,7 @@ const Chance = require('chance')
 const chance = new Chance()
 const geo = require('../lib/geo-from-ip.js')
 
-debug('Starting tests');
+debug('Starting tests')
 
 describe('Geos', function () {
   var ip = chance.ip()
