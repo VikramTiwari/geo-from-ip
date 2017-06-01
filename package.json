@@ -52,7 +52,7 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.1",
     "chance": "^1.0.8",
     "expect": "^1.20.1",
     "mocha": "^3.4.0",
