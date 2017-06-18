@@ -46,16 +46,16 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "async": "^2.4.0",
-    "debug": "^2.6.6",
+    "async": "^2.4.1",
+    "debug": "^2.6.8",
     "maxmind-db-reader": "^0.2.1",
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chance": "^1.0.8",
+    "chai": "^4.0.2",
+    "chance": "^1.0.10",
     "expect": "^1.20.1",
-    "mocha": "^3.4.0",
+    "mocha": "^3.4.2",
     "standard": "^10.0.2"
   }
 }
