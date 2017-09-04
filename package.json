@@ -54,7 +54,7 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "chance": "^1.0.10",
-    "expect": "^1.20.1",
+    "expect": "^21.0.0",
     "mocha": "^3.4.2",
     "standard": "^10.0.2"
   }
