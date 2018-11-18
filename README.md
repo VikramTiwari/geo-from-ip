@@ -7,14 +7,14 @@ Get geolocation 🌐 information about an IP 📲
 ## Features
 
 - No frills install 🚀
-- Downloads databases automatically during installation 🔋
+- Downloads GeoLite2 databases automatically during installation 🔋
 - Run `npm install` to upgrade databases == automatic update on deployments 💎
 
 ## How to use
 
 - Include package in your project
 
-``` sh
+```sh
 npm install --save geo-from-ip
 # or, if you are using yarn
 yarn add --save geo-from-ip
@@ -22,7 +22,7 @@ yarn add --save geo-from-ip
 
 - Use package to get geo data from IP
 
-``` javascript
+```javascript
 const geoip = require('geo-from-ip')
 console.log(geoip.allData('199.188.195.120'))
 
@@ -46,7 +46,7 @@ console.log(geoip.allData('199.188.195.120'))
 
 Database will get automatically updated every time deployment happens. But if you would like to force an update, just run:
 
-``` sh
+```sh
 npm install
 # or, if you are using yarn
 yarn
