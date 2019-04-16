@@ -5,7 +5,7 @@
   "main": "lib/geo-from-ip.js",
   "scripts": {
     "test": "standard --fix && DEBUG=geo-from-ip:* mocha",
-    "postinstall": "DEBUG=geo-from-ip:* node lib/update.js"
+    "postinstall": "cross-env DEBUG=geo-from-ip:* node lib/update.js"
   },
   "repository": {
     "type": "git",
@@ -47,6 +47,7 @@
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
     "async": "^2.6.1",
+    "cross-env": "^5.2.0",
     "debug": "^4.1.0",
     "maxmind-db-reader": "^0.2.1",
     "request": "^2.88.0"
