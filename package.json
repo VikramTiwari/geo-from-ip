@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^3.0.1",
     "cross-env": "^5.2.0",
     "debug": "^4.1.1",
     "maxmind-db-reader": "^0.2.1",
