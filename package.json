@@ -5,7 +5,7 @@
   "main": "lib/geo-from-ip.js",
   "scripts": {
     "fix": "standard --fix",
-    "postinstall": "cross-env MAXMIND_LICENSE_KEY=SNZHH8Hge81cgmlG DEBUG=geo-from-ip:* node lib/update.js",
+    "postinstall": "cross-env DEBUG=geo-from-ip:* node lib/update.js",
     "test": "DEBUG=geo-from-ip:* jest"
   },
   "repository": {
