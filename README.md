@@ -20,6 +20,8 @@ npm install --save geo-from-ip
 yarn add --save geo-from-ip
 ```
 
+- Set `MAXMIND_LICENSE_KEY=<your_maxmind_license_key>` in your environment variables. Read more about [this change on MaxMind's blog](https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/).
+
 - Use package to get geo data from IP
 
 ```javascript
