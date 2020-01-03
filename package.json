@@ -5,7 +5,7 @@
   "main": "lib/geo-from-ip.js",
   "scripts": {
     "fix": "standard --fix",
-    "postinstall": "cross-env DEBUG=geo-from-ip:* node lib/update.js",
+    "postinstall": "DEBUG=geo-from-ip:* node lib/update.js",
     "test": "DEBUG=geo-from-ip:* jest"
   },
   "repository": {
@@ -35,16 +35,15 @@
   "engines": {
     "node": ">=10"
   },
-  "standard": {
-    "globals": [
-      "describe",
-      "expect",
-      "test"
-    ]
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "cross-env": "^6.0.0",
     "debug": "^4.1.1",
     "maxmind-db-reader": "^0.2.1",
     "node-fetch": "^2.6.0",
@@ -53,6 +52,6 @@
   "devDependencies": {
     "chance": "^1.1.4",
     "jest": "^24.9.0",
-    "standard": "^14.3.1"
+    "prettier": "^1.19.1"
   }
 }
