@@ -53,6 +53,6 @@
   "devDependencies": {
     "chance": "^1.1.4",
     "jest": "^24.9.0",
-    "standard": "^14.3.1"
+    "standard": "14.3.1"
   }
 }
