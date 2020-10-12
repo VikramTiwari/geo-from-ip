@@ -38,6 +38,7 @@ Array(5)
           test('should return location information', () => {
             expect(Object.keys(result)).toContain('location')
           })
+          // NOTE: We can't use snapshot tests here because the IPs are generated at runtime
         })
       }
     })
