@@ -2,13 +2,13 @@
 
 Get geolocation 🌐 information about an IP 📲
 
-[![Build Status](https://travis-ci.org/VikramTiwari/geo-from-ip.svg?branch=master)](https://travis-ci.org/VikramTiwari/geo-from-ip) [![NPM Version](https://img.shields.io/npm/v/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip) [![NPM Download](https://img.shields.io/npm/dm/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip)
+![Build Status](https://github.com/VikramTiwari/geo-from-ip/workflows/Build%20Status/badge.svg) [![NPM Version](https://img.shields.io/npm/v/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip) [![NPM Download](https://img.shields.io/npm/dm/geo-from-ip.svg)](https://www.npmjs.com/package/geo-from-ip)
 
 ## Features
 
 - No frills install 🚀
 - Downloads GeoLite2 databases automatically during installation 🔋
-- Run `npm install` to upgrade databases == automatic update on deployments 💎
+- Run `npm install` to upgrade databases which means automatic updates on deployments 💎
 
 ## How to use
 
@@ -54,15 +54,13 @@ npm install
 yarn
 ```
 
+Remember that you will need to have `MAXMIND_LICENSE_KEY` set in your environment variables.
+
 ## Debugging / Developing
 
 Run your code using `geo-from-ip` as debug flag. Look into `pacakge.json` for example.
 
 ## Credits
-
-### Developer: [ 👨‍💻 Vikram Tiwari](https://vikramtiwari.com)
-
-If you found this library helpful, or learned something from it and want to thank me, consider [buying me a cup of ☕️.](https://www.paypal.me/vikramtiwari/5)
 
 ### Database: Max-Mind
 
