@@ -1,11 +1,11 @@
 {
   "name": "geo-from-ip",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Get geolocation 🌐 information about an IP address 📲",
   "main": "lib/geo-from-ip.js",
   "scripts": {
-    "fix": "standard --fix",
-    "postinstall": "cross-env DEBUG=geo-from-ip:* node lib/update.js",
+    "postinstall": "node lib/update.js",
+    "postinstall-debug": "DEBUG=geo-from-ip:* node lib/update.js",
     "test": "DEBUG=geo-from-ip:* jest --collectCoverage"
   },
   "repository": {
@@ -33,7 +33,7 @@
     "url": "https://github.com/VikramTiwari/geo-from-ip/issues"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "prettier": {
     "printWidth": 80,
@@ -44,14 +44,12 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
-    "cross-env": "^7.0.3",
     "debug": "^4.3.1",
     "maxmind-db-reader": "^0.2.1",
     "node-fetch": "^2.6.0",
     "targz": "^1.0.1"
   },
   "devDependencies": {
-    "chance": "^1.1.4",
     "jest": "^26.6.3"
   }
 }

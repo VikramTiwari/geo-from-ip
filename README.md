@@ -27,21 +27,39 @@ yarn add --save geo-from-ip
 ```javascript
 const geoip = require('geo-from-ip')
 console.log(geoip.allData('199.188.195.120'))
+```
 
-/*
-{ code: { state: 'CA', country: 'US', continent: 'NA' },
-  city: 'San Francisco',
-  state: 'California',
-  country: 'United States',
-  continent: 'North America',
-  postal: '94103',
-  location:
-   { accuracy_radius: 10,
-     latitude: 37.7758,
-     longitude: -122.4128,
-     metro_code: 807,
-     time_zone: 'America/Los_Angeles' } }
- */
+- And the complete response will be returned
+
+```json
+{
+  "code": {
+    "state": "CA",
+    "country": "US",
+    "registeredCountry": "US",
+    "continent": "NA"
+  },
+  "geonameId": {
+    "city": 5391959,
+    "state": 5332921,
+    "country": 6252001,
+    "registeredCountry": 6252001,
+    "continent": 6255149
+  },
+  "city": "San Francisco",
+  "state": "California",
+  "country": "United States",
+  "registeredCountry": "United States",
+  "continent": "North America",
+  "postal": "94107",
+  "location": {
+    "accuracy_radius": 5,
+    "latitude": 37.7642,
+    "longitude": -122.3993,
+    "metro_code": 807,
+    "time_zone": "America/Los_Angeles"
+  }
+}
 ```
 
 - Update database
