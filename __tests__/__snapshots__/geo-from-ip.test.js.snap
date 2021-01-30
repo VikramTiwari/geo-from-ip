@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`geo-from-ip allData 1.1.1.1 1`] = `
+Object {
+  "city": null,
+  "code": Object {
+    "continent": "OC",
+    "country": "AU",
+    "registeredCountry": "AU",
+    "state": null,
+  },
+  "continent": "Oceania",
+  "country": "Australia",
+  "geonameId": Object {
+    "city": null,
+    "continent": 6255151,
+    "country": 2077456,
+    "registeredCountry": 2077456,
+    "state": null,
+  },
+  "location": Object {
+    "accuracy_radius": 1000,
+    "latitude": -33.494,
+    "longitude": 143.2104,
+    "time_zone": "Australia/Sydney",
+  },
+  "registeredCountry": "Australia",
+  "state": null,
+}
+`;
+
+exports[`geo-from-ip allData 8.8.8.8 1`] = `
+Object {
+  "city": null,
+  "code": Object {
+    "continent": "NA",
+    "country": "US",
+    "registeredCountry": "US",
+    "state": null,
+  },
+  "continent": "North America",
+  "country": "United States",
+  "geonameId": Object {
+    "city": null,
+    "continent": 6255149,
+    "country": 6252001,
+    "registeredCountry": 6252001,
+    "state": null,
+  },
+  "location": Object {
+    "accuracy_radius": 1000,
+    "latitude": 37.751,
+    "longitude": -97.822,
+    "time_zone": "America/Chicago",
+  },
+  "registeredCountry": "United States",
+  "state": null,
+}
+`;
+
+exports[`geo-from-ip allData 18.12.25.208 1`] = `
+Object {
+  "city": "Cambridge",
+  "code": Object {
+    "continent": "NA",
+    "country": "US",
+    "registeredCountry": "US",
+    "state": "MA",
+  },
+  "continent": "North America",
+  "country": "United States",
+  "geonameId": Object {
+    "city": 4931972,
+    "continent": 6255149,
+    "country": 6252001,
+    "registeredCountry": 6252001,
+    "state": 6254926,
+  },
+  "location": Object {
+    "accuracy_radius": 1000,
+    "latitude": 42.3649,
+    "longitude": -71.0987,
+    "metro_code": 506,
+    "time_zone": "America/New_York",
+  },
+  "postal": "02139",
+  "registeredCountry": "United States",
+  "state": "Massachusetts",
+}
+`;
+
+exports[`geo-from-ip allData 53.251.2.108 1`] = `
+Object {
+  "city": null,
+  "code": Object {
+    "continent": "EU",
+    "country": "DE",
+    "registeredCountry": "DE",
+    "state": null,
+  },
+  "continent": "Europe",
+  "country": "Germany",
+  "geonameId": Object {
+    "city": null,
+    "continent": 6255148,
+    "country": 2921044,
+    "registeredCountry": 2921044,
+    "state": null,
+  },
+  "location": Object {
+    "accuracy_radius": 200,
+    "latitude": 51.2993,
+    "longitude": 9.491,
+    "time_zone": "Europe/Berlin",
+  },
+  "registeredCountry": "Germany",
+  "state": null,
+}
+`;
+
+exports[`geo-from-ip allData 95.84.136.77 1`] = `
+Object {
+  "city": "Moscow",
+  "code": Object {
+    "continent": "EU",
+    "country": "RU",
+    "registeredCountry": "RU",
+    "state": "MOW",
+  },
+  "continent": "Europe",
+  "country": "Russia",
+  "geonameId": Object {
+    "city": 524901,
+    "continent": 6255148,
+    "country": 2017370,
+    "registeredCountry": 2017370,
+    "state": 524894,
+  },
+  "location": Object {
+    "accuracy_radius": 1,
+    "latitude": 55.7482,
+    "longitude": 37.6177,
+    "time_zone": "Europe/Moscow",
+  },
+  "postal": "102289",
+  "registeredCountry": "Russia",
+  "state": "Moscow",
+}
+`;
+
+exports[`geo-from-ip allData 199.188.195.120 1`] = `
+Object {
+  "city": "San Francisco",
+  "code": Object {
+    "continent": "NA",
+    "country": "US",
+    "registeredCountry": "US",
+    "state": "CA",
+  },
+  "continent": "North America",
+  "country": "United States",
+  "geonameId": Object {
+    "city": 5391959,
+    "continent": 6255149,
+    "country": 6252001,
+    "registeredCountry": 6252001,
+    "state": 5332921,
+  },
+  "location": Object {
+    "accuracy_radius": 5,
+    "latitude": 37.7642,
+    "longitude": -122.3993,
+    "metro_code": 807,
+    "time_zone": "America/Los_Angeles",
+  },
+  "postal": "94107",
+  "registeredCountry": "United States",
+  "state": "California",
+}
+`;
+
+exports[`geo-from-ip allData 223.63.194.232 1`] = `
+Object {
+  "city": "Busan",
+  "code": Object {
+    "continent": "AS",
+    "country": "KR",
+    "registeredCountry": "KR",
+    "state": "26",
+  },
+  "continent": "Asia",
+  "country": "South Korea",
+  "geonameId": Object {
+    "city": 1838524,
+    "continent": 6255147,
+    "country": 1835841,
+    "registeredCountry": 1835841,
+    "state": 1838519,
+  },
+  "location": Object {
+    "accuracy_radius": 100,
+    "latitude": 35.1003,
+    "longitude": 129.0442,
+    "time_zone": "Asia/Seoul",
+  },
+  "postal": "48943",
+  "registeredCountry": "South Korea",
+  "state": "Busan",
+}
+`;
+
+exports[`geo-from-ip error 0 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "0",
+}
+`;
+
+exports[`geo-from-ip error 0.0.0.0 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "0.0.0.0",
+}
+`;
+
+exports[`geo-from-ip error 10.0.0.1 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "10.0.0.1",
+}
+`;
+
+exports[`geo-from-ip error 127.0.0.1 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "127.0.0.1",
+}
+`;
+
+exports[`geo-from-ip error 172.16.0.1 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "172.16.0.1",
+}
+`;
+
+exports[`geo-from-ip error 192.168.0.1 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "192.168.0.1",
+}
+`;
+
+exports[`geo-from-ip error 255.255.255.255 1`] = `
+Object {
+  "code": Object {},
+  "error": "NA",
+  "geonameId": Object {},
+  "ip": "255.255.255.255",
+}
+`;
